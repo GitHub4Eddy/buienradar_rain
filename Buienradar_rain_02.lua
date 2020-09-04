@@ -1,6 +1,6 @@
 -- QuickApp BUIENRADAR RAIN 
 
--- This QuickApp predicts the rain in Europe with data from the Buienradar, two hours in advance
+-- This QuickApp predicts the rain in a part of Europe with data from the Buienradar, two hours in advance
 -- The value of this QuickApp represents the minutes until rain
 -- If there is no rain expected, the value is set to 0
 -- If it rains, the value is set to 999 and the amount of rain (mm/h) is shown
@@ -10,7 +10,7 @@
 
 -- Version 0.2 (4th September 2020)
 -- Ready for the new Mobile App 1.9: Added visual level of rain (forecast) with thanks to @tinman from forum.fibaro.com
--- Added warning for latitude and logitude settings where Buitenradar Rain has (no) coverage
+-- Added warning for latitude and logitude settings where Buienradar Rain has (no) coverage
 
 -- Version 0.1 (15th August 2020)
 -- Initial version
