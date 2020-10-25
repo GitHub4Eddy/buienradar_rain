@@ -9,6 +9,9 @@ If rain is expected or it rains, the interval for checking the Buienradar data (
 
 With the value updated in this QuickApp, you are able to build and use your own scenes to notify, to close or open sunscreens, to close or open windows, etcetera
 
+Version 1.0 (25th October 2020)
+- Added the possiblity to change the icon according to rain, rain expected or dry. Three not mandatory quickapp variables are added to fill in with the icon number for rain, rain expected and dry. 
+
 Version 0.3 (26th September 2020)
 - Build an extra check for an incomplete Buienradar response (sometimes less than two hours)
 - Added global variable maxLines to arrange the maximum amount of lines to indicate the amount of rain (one line for every 0.10mm rain) to fit the screen of your mobile device
