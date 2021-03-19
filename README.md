@@ -9,6 +9,14 @@ If rain is expected or it rains, the interval for checking the Buienradar data (
 
 With the value updated in this QuickApp, you are able to build and use your own scenes to notify, to close or open sunscreens, to close or open windows, etcetera
 
+
+Version 1.1 (19th March 2021)
+- Added Child Device for rainfall mm/h
+- Added Quickapp variable for debug level (1=some, 2=few, 3=all). Recommended default value is 1. debuglevel 4 = Rain expected simalation. debugLevel = 5 Raining simulation
+- Freed up some space (3 positions) in the presentation of the amount of rain 
+- Increased the default value of the maximum lines (maxLines) from 23 to 26
+- Changed the unit in case of rain to empty
+
 Version 1.0 (25th October 2020)
 - Added the possiblity to change the icon according to rain, rain expected or dry. Three not mandatory quickapp variables are added to fill in with the icon number for rain, rain expected and dry. 
 
