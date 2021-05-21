@@ -1,6 +1,6 @@
 # Buienradar_Rain
 
-This QuickApp predicts the rain in a part of Europe with data from the Buienradar, two hours in advance. The value of this QuickApp represents the minutes until rain
+This QuickApp (for the Fibaro Homecenter 3) predicts the rain in a part of Europe with data from the Buienradar, two hours in advance. The value of this QuickApp represents the minutes until rain
 If there is no rain expected, the value is set to 0. If it rains, the value is set to 999 and the amount of rain (mm/h) is shown
 
 Buienradar updates every 5 minutes with intervals of 5 minutes until 2 hours in advance. If rain is expected within the first predicted 5 minutes or less, the QuickApp assumes it is raining. 
