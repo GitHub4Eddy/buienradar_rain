@@ -9,6 +9,10 @@ If rain is expected or it rains, the interval for checking the Buienradar data (
 
 With the value updated in this QuickApp, you are able to build and use your own scenes to notify, to close or open sunscreens, to close or open windows, etcetera
 
+Version 1.3 (19th February 2022)
+- Added extra debug lines
+- Small change in buildup labels
+
 Version 1.2 (8th January 2022)
 - Buienradar change the response with decimals and without leading zero's. Added some code to handle that. 
 
