@@ -1,20 +1,27 @@
 # Buienradar_Rain
 
-This QuickApp (for the Fibaro Homecenter 3) predicts the rain in a part of Europe with data from the Buienradar, two hours in advance. The value of this QuickApp represents the minutes until rain
-If there is no rain expected, the value is set to 0. If it rains, the value is set to 999 and the amount of rain (mm/h) is shown
-
+This QuickApp predicts the rain in a part of Europe with data from the Buienradar, two hours in advance.
+The value of this QuickApp represents the minutes until rain.
+If there is no rain expected, the value is set to 0.
+If it rains, the value is set to 999 and the amount of rain (mm/h) is shown.
 Buienradar updates every 5 minutes with intervals of 5 minutes until 2 hours in advance. If rain is expected within the first predicted 5 minutes or less, the QuickApp assumes it is raining. 
-
 If rain is expected or it rains, the interval for checking the Buienradar data (default without rain 300 seconds, equal to the Buienradar updates) is speed up (default 60 seconds) so the QuickApp value is updated more often.
+With the value updated in this QuickApp, you are able to build and use your own scenes to notify, to close or open sunscreens, to close or open windows, etcetera. 
 
-With the value updated in this QuickApp, you are able to build and use your own scenes to notify, to close or open sunscreens, to close or open windows, etcetera
+
+Version 2.0 (22rd May 2024)
+- Changed the buienradar url to https://gadgets.buienradar.nl/data/raintext
+- Limited Buienradar Rain only for latitude 50-54 and longitude 1-9, because Buitenradar.nl also does
+- Added translations for English, Dutch and French 
+- Changed the code to multi file
+
 
 Version 1.3 (19th February 2022)
 - Added extra debug lines
 - Small change in buildup labels
 
 Version 1.2 (8th January 2022)
-- Buienradar change the response with decimals and without leading zero's. Added some code to handle that. 
+- Buienradar changed the response with decimals and without leading zero's. Added some code to handle that. 
 
 Version 1.1 (19th March 2021)
 - Added Child Device for rainfall mm/h
@@ -24,7 +31,7 @@ Version 1.1 (19th March 2021)
 - Changed the unit in case of rain to empty
 
 Version 1.0 (25th October 2020)
-- Added the possiblity to change the icon according to rain, rain expected or dry. Three not mandatory quickapp variables are added to fill in with the icon number for rain, rain expected and dry. 
+- Added the possibility to change the icon according to rain, rain expected or dry. Three not mandatory quickapp variables are added to fill in with the icon number for rain, rain expected and dry. 
 
 Version 0.3 (26th September 2020)
 - Build an extra check for an incomplete Buienradar response (sometimes less than two hours)
@@ -43,10 +50,15 @@ JSON data terms: Deze feed mag vrij worden gebruikt onder voorwaarde van bronver
 
 The value 000 indicates no rain (dry), the value 255 indicates heavy rain. 
 Used formula for converting to the rain intensity in the unit millimetre per hour (mm/h): Rain intensity = 10^(value-109)/32)
-Example: a value of 77 is equal to a rain intensity of 0,1 mm/h.
+Example: a value of 77 is equal to a rain intensity of 0,1 ㎜/𝚑.
 
 Variables mandatory:
 - intervalR = Number in seconds to update the data when rain expected or raining (must be different to IntervalD)
 - intervalD = Number in seconds to update the data when no rain expected, Buienradar is updated every 300 seconds
-- latitude = of your location (Default is the latitude of your HC3)
-- longitude = of your location (Default is the longitude of your HC3)
+- latitude = latitude of your location (Default is the latitude of your HC3)
+- longitude = longitude of your location (Default is the longitude of your HC3)
+- maxLines = number of | to indicate the amount of rain (one line for every 0.10mm rain)
+- iconR = icon number for rain
+- iconE = icon for rain expected
+- iconD = icon number for dry
+- language = Preferred language (default = English (en), supported languages is English (en), Dutch (nl) and French (fr))
