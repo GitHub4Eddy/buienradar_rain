@@ -66,7 +66,7 @@ Variables mandatory:
 - iconR = icon number for rain
 - iconE = icon for rain expected
 - iconD = icon number for dry
-- language = Preferred language (default = English (en), supported languages is English (en), Dutch (nl) and French (fr))
+- language = Preferred language (default = English (en), supported languages is English (en), Dutch (nl), German (de) and French (fr))
 
 ]]
 
