@@ -5,16 +5,19 @@ The value of this QuickApp represents the minutes until rain.
 If there is no rain expected, the value is set to 0.
 If it rains, the value is set to 999 and the amount of rain (mm/h) is shown.
 Buienradar updates every 5 minutes with intervals of 5 minutes until 2 hours in advance. If rain is expected within the first predicted 5 minutes or less, the QuickApp assumes it is raining. 
-If rain is expected or it rains, the interval for checking the Buienradar data (default without rain 300 seconds, equal to the Buienradar updates) is speed up (default 60 seconds) so the QuickApp value is updated more often.
-With the value updated in this QuickApp, you are able to build and use your own scenes to notify, to close or open sunscreens, to close or open windows, etcetera. 
+If rain is expected or it rains, the interval for checking the Buienradar data (default without rain 300 seconds, equal to the Buienradar updates) is speed up (default 60 seconds) so the QuickApp values are updated more often.
+In a child device you can see the amount of current rain in mm/h. In two other child devices you can see the amount of rain in mm in the first hour and in the second hour. 
+With the values updated in this QuickApp, you are able to build and use your own scenes to notify, to close or open sunscreens, to close or open windows, etcetera. 
 
+Version 3.0 (7th July 2024)
+- Added two child devices for upcoming amount of rain the first hour and the second hours
+- Added German translation (thanks to @KaWi from the Fibaro Forum)
 
 Version 2.0 (22rd May 2024)
 - Changed the buienradar url to https://gadgets.buienradar.nl/data/raintext
 - Limited Buienradar Rain only for latitude 50-54 and longitude 1-9, because Buitenradar.nl also does
 - Added translations for English, Dutch and French 
 - Changed the code to multi file
-
 
 Version 1.3 (19th February 2022)
 - Added extra debug lines
